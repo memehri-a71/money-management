@@ -1,15 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
+  mode: "jit",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      screens: {
-        xs: "580px",
-        // => @media (min-width: 580px) { ... }
-      },
-      gridTemplateRows: {
-        12: "repeat(12, minmax(0, 1fr))",
-        // => Simple 8 row grid
+      colors: {
+        primary: {
+          default: "#85017a",
+          veyrDark: "#4f0149",
+          dark: "#690261",
+          light: "#c746bc",
+        },
       },
     },
   },
