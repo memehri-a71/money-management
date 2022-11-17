@@ -3,6 +3,7 @@ export const CustomColors = {
         default: "#85017a",
         veyrDark: "#4f0149",
         dark: "#690261",
-        light: "#c746bc"
+        light: "#c746bc",
+        veryLight: "#f7a8f1",
     }
 }

@@ -14,10 +14,9 @@ const AddButton = () => {
         + افزودن
       </button>
       {showSubmitInfoMenu && <>
-        <SubmitInfoMenu />
+        <SubmitInfoMenu showSubmitInfoMenu={showSubmitInfoMenu} setShowSubmitInfoMenu={setShowSubmitInfoMenu} />
         <div className='fixed inset-0 bg-black opacity-30 z-20'></div>
-      </>
-      }
+      </>}
     </>
   )
 }

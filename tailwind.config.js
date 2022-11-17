@@ -6,6 +6,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      primary:"#85017a",
       colors: {
         primary: {
           default: "#85017a",

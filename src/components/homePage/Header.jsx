@@ -3,7 +3,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import PieChartOutlineOutlinedIcon from '@mui/icons-material/PieChartOutlineOutlined';
 import SidebarMenu from './menus/SidebarMenu';
 import { CustomConfigs } from '../../configs/CustomConfigs';
-import CloseWithOnClickScreen from '../shared/logic/CloseWithOnClickScreen';
 
 const Header = () => {
     const [showSidebarMenu, setShowSidebarMenu] = useState(false);
@@ -18,10 +17,9 @@ const Header = () => {
                 <div className='h-28 rounded-b-[2rem]' style={{ ...CustomConfigs.themeColors.primary }}></div>
             </div>
             {showSidebarMenu && <>
-                <SidebarMenu showSidebarMenu={showSidebarMenu} setShowSidebarMenu={setShowSidebarMenu}  />
+                <SidebarMenu showSidebarMenu={showSidebarMenu} setShowSidebarMenu={setShowSidebarMenu} />
                 <div className='fixed inset-0 bg-black opacity-30 z-20'></div>
-            </>
-            }
+            </>}
         </>
     )
 }

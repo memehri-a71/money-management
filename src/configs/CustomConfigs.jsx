@@ -14,6 +14,9 @@ export const CustomConfigs = {
     },
     light: {
       backgroundColor: CustomColors.themeColor.light,
+    },
+    veryLight: {
+      backgroundColor: CustomColors.themeColor.veryLight,
     }
   }
 }
