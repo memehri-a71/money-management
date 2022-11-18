@@ -1,7 +1,7 @@
 import React from 'react';
 import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeftOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
-import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined';
+import CreateIcon from '@mui/icons-material/Create';
 import DataSaverOnOutlinedIcon from '@mui/icons-material/DataSaverOnOutlined';
 import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
 import TransactionLayout from '../shared/submitTransactionLayout/TransactionLayout';
@@ -11,6 +11,7 @@ import { CustomConfigs } from '../../configs/CustomConfigs';
 const ExpensePage = () => {
     const incomeList = [
         {
+            id: 1,
             type: '',
             title: 'انتخاب دسته‌بندی',
             icon: <KeyboardArrowLeftOutlinedIcon style={{ fontSize: '16px' }} />,
@@ -19,14 +20,16 @@ const ExpensePage = () => {
             colorLevel: 'red'
         },
         {
+            id: 2,
             type: 'input',
             title: 'توضیحات مربوط به تراکنش را بنویسید(اختیاری)',
             icon: '',
-            badgeIcon: CreateOutlinedIcon,
+            badgeIcon: CreateIcon,
             text: '',
             colorLevel: 'yellow'
         },
         {
+            id: 3,
             type: '',
             title: 'مبلغ تراکنش را وارد کنید',
             icon: '',
@@ -35,6 +38,7 @@ const ExpensePage = () => {
             colorLevel: 'red'
         },
         {
+            id: 4,
             type: '',
             title: '26 آبان',
             icon: <CalendarMonthOutlinedIcon style={{ fontSize: '16px' }} />,
@@ -43,6 +47,7 @@ const ExpensePage = () => {
             colorLevel: 'green'
         },
         {
+            id: 5,
             type: '',
             title: 'انتخاب مدل هزینه‌کرد(رفتار مالی)',
             icon: '',
@@ -58,7 +63,7 @@ const ExpensePage = () => {
         { text1: 'لازم', text2: 'بی‌حساب', style: 'rounded-bl-xl' },
     ]
     return (
-        <div style={{backgroundColor:'#ededed', height:'100vh'}}>
+        <>
             <TransactionLayout list={incomeList} headerText='ثبت تراکنش هزینه' />
             <div className='flex flex-col items-center py-6'>
                 <div className='grid grid-rows-2 grid-flow-col gap-1 cursor-pointer'>
@@ -70,7 +75,7 @@ const ExpensePage = () => {
                     </div>)}
                 </div>
             </div>
-        </div >
+        </ >
     )
 }
 

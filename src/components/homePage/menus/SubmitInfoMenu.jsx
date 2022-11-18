@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
+import { useNavigate } from 'react-router';
 import { CustomConfigs } from '../../../configs/CustomConfigs';
 import NoteAltIcon from '@mui/icons-material/NoteAlt';
 import TextsmsIcon from '@mui/icons-material/Textsms';
 import ArrowCircleUpTwoToneIcon from '@mui/icons-material/ArrowCircleUpTwoTone';
 import ArrowCircleDownTwoToneIcon from '@mui/icons-material/ArrowCircleDownTwoTone';
 import CloseWithOnClickScreen from '../../shared/logic/CloseWithOnClickScreen';
-import { useNavigate } from 'react-router';
 
 const SubmitInfoMenu = ({ showSubmitInfoMenu, setShowSubmitInfoMenu }) => {
     const submitInfoMenuRef = useRef();

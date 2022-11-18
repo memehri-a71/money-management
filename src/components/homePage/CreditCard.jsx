@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { CustomConfigs } from '../../configs/CustomConfigs';
 import NorthIcon from '@mui/icons-material/North';
 import SouthIcon from '@mui/icons-material/South';
@@ -33,4 +33,4 @@ const CreditCard = () => {
     )
 }
 
-export default CreditCard
+export default CreditCard;

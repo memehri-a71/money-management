@@ -1,13 +1,17 @@
-import React from 'react'
-import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeftOutlined';
-const SelectBox = ({ title, text, icon, type }) => {
+import React from 'react';
+
+const SelectBox = ({ setShowMenu, setId, list }) => {
     return (
-        <div className='flex items-center justify-between text-sm bg-white rounded-lg border border-gray-100 shadow-sm w-full p-3'>
-            {!type && <p className=''>{title}</p>}
-            {type && <input type="text" placeholder={title} className='w-full outline-none'/>}
+        <div className='flex items-center justify-between text-sm cursor-pointer bg-white rounded-lg border border-gray-100 shadow-sm w-full p-3'
+            onClick={() => {
+                setShowMenu(true);
+                setId(list.id)
+            }}>
+            {!list.type && <p className=''>{list.title}</p>}
+            {list.type && <input type="text" placeholder={list.title} className='w-full outline-none' />}
             <div className='flex gap-1 items-center'>
-                <p>{text} </p>
-                {icon}
+                <p>{list.text} </p>
+                {list.icon}
             </div>
         </div>
     )
